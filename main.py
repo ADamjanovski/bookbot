@@ -1,1 +1,9 @@
-print("greetings boots")
+import sys
+def read_book(path_to_file):
+    with open(path_to_file) as f:
+        print(f.read())
+
+
+if __name__ == "__main__":
+    args = sys.argv
+    read_book(sys.argv[1])
