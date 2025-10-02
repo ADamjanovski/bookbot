@@ -8,5 +8,11 @@ def read_book(path_to_file):
 
 if __name__ == "__main__":
     args = sys.argv
-    count_words("./books/frankenstein.txt")
-    rearange("./books/frankenstein.txt")
+    if len(sys.argv)!=2:
+        print("Usage: python3 main.py <path_to_book>")
+    else:
+        count_words(sys.argv[1])
+        rearange(sys.argv[1])
+
+
+#./books/frankenstein.txt
