@@ -6,4 +6,4 @@ def read_book(path_to_file):
 
 if __name__ == "__main__":
     args = sys.argv
-    read_book(sys.argv[1])
+    read_book("./books/frankenstein.txt")
